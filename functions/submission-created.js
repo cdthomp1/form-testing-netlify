@@ -3,7 +3,7 @@ var hbs = require('nodemailer-express-handlebars')
 
 const fs = require('fs');
 
-fs.readdir('/', (err, files) => {
+fs.readdir('/emails', (err, files) => {
     files.forEach(file => {
         console.log(file);
     });
